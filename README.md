@@ -11,3 +11,17 @@ DocAnalysis1
 Azure document intelligence provides you with a SDK and APIs that allow to create apps
 need to decide which SDK version is to be used as the functionalities depends on the version we chose
 GitHub Free for personal accounts	15 GB-month	120 hrs
+Creating a .env file and adding it to .gitignore ensures that sensitive information like the endpoint and key are not shared publicly.
+**Azure Document Intelligence can be run in a container, allowing deployment on edge-devices or on-premises.**
+Read model - extract printed or written text lines, words, locations, and detected languages
+Layout model if we need to extract structural information like tables, selection marks, paragraphs, titles, headings, and subheadings.
+Read and Layout model can have 4MB for free tier
+2000 pages per file for paid tier, 500 MB for paid tier
+   2 pages for free tier - 4MB
+   Password pdf cannot be processed
+   Layout has all the read model capabilities
+   We get the JSON code using document analyser in layout model. We can use this code or API if you want to use this service for our application
+   we can use Postman to get the results via API
+   (refer to azure document intelligence REST API documentation to get the specifications of the API.
+   we have two methods to use document intelligence, POST and GET. postanalyzedocument POST method, and get analyze result method() to get your results
+   Step 1: we assign the endpoint, api key and model ID as environment variables in Postman
